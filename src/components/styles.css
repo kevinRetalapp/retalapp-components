@@ -1,0 +1,48 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+.navbar {
+    background: transparent;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 5rem;
+    z-index: 10;
+}
+
+.navbar_link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1.5rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+.navbar_link:active {
+   
+    text-decoration: underline;
+    text-decoration-color: #15cdfc;
+    
+}
+
+.navbar_menu {
+    display: flex;
+    align-items: center;
+    margin-right: -24px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .navbar_menu {
+        display: none; 
+        /* Esto es para el responsive por si lo haran asi */
+    }
+}
