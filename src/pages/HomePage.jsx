@@ -1,12 +1,13 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import Header from '../components/Header'
+
 import '../components/styles.css'
 
 const HomePage = () => {
     return (
-        <div className="dark">
-           <Navbar/> 
-        </div>
+        <>
+           <Header/>
+        </>
     )
 }
 
