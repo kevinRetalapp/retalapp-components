@@ -13,7 +13,7 @@ function App() {
         <Route path="/themes" component={}/>
         <Route path="/agency" component={}/> */}
       </Switch>
-      {/* <Footer/> */}
+      <Footer/>
     </Router>
   );
 }

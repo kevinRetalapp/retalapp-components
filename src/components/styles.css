@@ -47,7 +47,7 @@ Link {
     max-width: 1300px;
 }
 
-.container{
+.container {
     align-items: center;
     justify-self: center;
     margin: 0 auto;
@@ -90,8 +90,6 @@ Link {
     font-size: 14px;
 }
 
-
-
 .header_items {
     width: 100%;
     text-transform: uppercase;
@@ -131,6 +129,49 @@ Link {
     margin-left: 5rem;
 }
 
+.header_features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+    width: 200px;
+
+}
+
+.header_features span {
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+.header_features div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0 px;
+    align-items: center;
+    
+}
+
+.header_circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.purple {
+    border: solid 3px #421bab;
+}
+
+.orange {
+    border: solid 3px #e5853d;
+}
+
+.red {
+    border: solid 3px #e51252;
+}
+
 .footer {
     width: 80%;
     border-top: 2px solid #383838;
@@ -145,13 +186,6 @@ Link {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 150px;
     padding: 45px 0px;
-}
-.footer_wrapper .box figure {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .footer_wrapper .box h2 {
@@ -173,7 +207,7 @@ Link {
 
 #footer_rights {
     text-align: center;
-    font-size: .7rem;
+    font-size: 0.7rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -200,5 +234,18 @@ Link {
 
     .btn {
         margin: 20px 0 0 20px;
+    }
+
+    .footer_wrapper .box h2 {
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .footer_wrapper .box p {
+        color: #efefef;
+        margin-bottom: 10px;
+        text-decoration: none;
+        text-align: center;
     }
 }
