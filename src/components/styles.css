@@ -5,13 +5,57 @@ body {
     background: #000;
 }
 
+a,
+Link {
+    text-decoration: none;
+}
+
 .navbar {
     background: transparent;
     height: 80px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container {
+    display: flex;
     justify-content: space-between;
-    padding: 0.5rem 5rem;
-    z-index: 10;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.header_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: calc(100vh - 80px);
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.container{
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 100vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    border-top: 5px solid #fff;
 }
 
 .navbar_link {
@@ -19,7 +63,16 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 1.5rem;
+    padding: 0 2.2rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+.navbar_logo {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
     height: 100%;
     cursor: pointer;
 }
@@ -37,25 +90,14 @@ body {
     font-size: 14px;
 }
 
-@media screen and (max-width: 768px) {
-    .navbar_menu {
-        display: none;
-        /* Esto es para el responsive por si lo haran asi */
-    }
-}
 
-.header_container {
-    height: calc(100vh - 80px - 1rem);
-    padding: 0rem 5rem;
-    background: #000;
-}
 
 .header_items {
-    padding: 0 2rem;
-    width: 650px;
+    width: 100%;
     text-transform: uppercase;
     line-height: 1;
     font-family: "Montserrat", sans-serif;
+    margin-bottom: 10rem;
 }
 
 .header_title {
@@ -64,18 +106,99 @@ body {
     font-weight: 600;
 }
 
-.btn{
-    background: linear-gradient(90deg, #6C20E8 0%, #141768 100%);
+.btn {
+    background: linear-gradient(90deg, #6c20e8 0%, #141768 100%);
     border-radius: 10px;
     border: #fff;
     color: #fff;
-    padding:11px 30px;
+    padding: 13px 30px;
     font-weight: 600;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
-
 }
 
-.btn:hover{
+.btn:hover {
     cursor: pointer;
+}
+
+.header_image_container {
+    text-align: center;
+}
+
+.header_image {
+    width: 536px;
+    height: 467px;
+    margin-left: 5rem;
+}
+
+.footer {
+    width: 80%;
+    border-top: 2px solid #383838;
+    font-family: "Poppins", sans-serif;
+    margin: auto;
+}
+.footer_wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 150px;
+    padding: 45px 0px;
+}
+.footer_wrapper .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_wrapper .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.footer_wrapper .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer_rights {
+    text-align: center;
+    font-size: .7rem;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar_menu {
+        display: none;
+        /* Esto es para el responsive por si lo haran asi */
+    }
+
+    .footer_wrapper {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .header_image {
+        display: none;
+    }
+
+    .header_title {
+        margin: 0 20px 0;
+        font-size: 3rem;
+    }
+
+    .btn {
+        margin: 20px 0 0 20px;
+    }
 }

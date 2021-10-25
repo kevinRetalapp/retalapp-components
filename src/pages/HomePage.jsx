@@ -1,12 +1,18 @@
 import React from 'react'
-import Header from '../components/Header'
+import HeaderSection from '../components/HeaderSection'
+import TabsSection from '../components/TabsSection'
+import FeaturesSection from '../components/FeaturesSection'
 
 import '../components/styles.css'
 
 const HomePage = () => {
     return (
-        <>
-           <Header/>
+        < >
+
+           <HeaderSection/>
+
+           <TabsSection/>
+           <FeaturesSection/>
         </>
     )
 }
