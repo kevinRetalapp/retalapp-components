@@ -1,11 +1,11 @@
 import React from 'react'
 
-const TabsSection = () => {
+const DocsPage = () => {
     return (
         <div className="container">
-            <h1 >asdasdas</h1>
+            <h1>hola</h1>
         </div>
     )
 }
 
-export default TabsSection
+export default DocsPage
